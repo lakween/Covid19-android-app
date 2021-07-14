@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/covidlogo"/>
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Covid19 Update"
+        android:textSize="40sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In to Continue"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/xusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/xpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword">
+
+        </EditText>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="#FFFCFC"
+            android:text="Forget Password" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#2196F3"
+            android:text="Login"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:elevation="0dp"
+            android:text="New User? SING UP"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>

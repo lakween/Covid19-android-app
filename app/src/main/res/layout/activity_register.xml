@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/covidlogo"/>
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Your Account"
+        android:textSize="40sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User, Time to Register"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/xusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/lastn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/xpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            />
+
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            />
+
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#2196F3"
+            android:text="Register"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/backlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:elevation="0dp"
+            android:text="Back to Login"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

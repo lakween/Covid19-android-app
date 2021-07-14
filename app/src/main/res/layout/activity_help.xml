@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgapp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/txtdashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Help"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txtToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Udaya Nadeeshan"
+                android:layout_below="@+id/txtdashboard"
+                android:layout_marginTop="6dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:rowCount="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/local"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="For Emergencies"
+                        android:textColor="#4D4A4A"
+                        android:textSize="22sp"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:text="Call Center 117"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="General: +94 112 136 136"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:text="Emergency Operation Center:+94 112 136 222 /+94 112 670 002"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"/>
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+        <ImageView
+            android:layout_width="333dp"
+            android:layout_height="326dp"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/call" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:src="@drawable/whatsapp" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+
+
